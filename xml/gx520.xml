@@ -41,7 +41,86 @@
     
 	<wheels>
         <wheelConfigurations>
-            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="TRELLEBORG" saveId="TRELLEBORG_DEFAULT">
+			
+            <wheelConfiguration name="Deafult Special 1" price="1500" brand="MICHELIN" saveId="MICHELIN_SPECIAL1">
+                <wheels baseConfig="MICHELIN_DEFAULT">
+                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
+                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
+                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml">
+                        <wheelChock/>
+                        <wheelChock/>
+                    </wheel>
+                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
+                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
+                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
+                </wheels>
+                <foliageBendingModifier index="1" minX="-1.55" maxX="1.55"/>
+            </wheelConfiguration>
+			
+            <wheelConfiguration name="Deafult Special 2" price="1500" brand="MICHELIN" saveId="MICHELIN_SPECIAL2">
+                <wheels baseConfig="MICHELIN_DEFAULT">
+                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
+                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
+                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml">
+                        <wheelChock/>
+                        <wheelChock/>
+                    </wheel>
+                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
+                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
+                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
+                </wheels>
+                <foliageBendingModifier index="1" minX="-1.55" maxX="1.55"/>
+				
+				<objectChange node="wheelRingLF" visibilityActive="true" translationActive="0.08 0 0"	scaleActive="0.7 0.75 0.75"/>
+				<objectChange node="wheelRingRF" visibilityActive="true" translationActive="-0.08 0 0" 	scaleActive="0.7 0.75 0.75"/>
+				<objectChange node="wheelRingLM" visibilityActive="true" translationActive="0.08 0 0"	scaleActive="0.7 0.75 0.75"/>
+				<objectChange node="wheelRingRM" visibilityActive="true" translationActive="-0.08 0 0" 	scaleActive="0.7 0.75 0.75"/>
+				<objectChange node="wheelRingLB" visibilityActive="true" translationActive="0.08 0 0" 	scaleActive="0.7 0.75 0.75"/>
+				<objectChange node="wheelRingRB" visibilityActive="true" translationActive="-0.08 0 0" 	scaleActive="0.7 0.75 0.75"/>
+				
+            </wheelConfiguration>
+			
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="MICHELIN" saveId="MICHELIN_DEFAULT">
+                <wheels baseConfig="TRELLEBORG_DEFAULT">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/710_50R30_5.xml">
+                        <physics yOffset="0.026"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/710_50R30_5.xml">
+                        <physics yOffset="0.026"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/710_50R30_5.xml">
+                        <physics yOffset="0.026"/>
+                        <wheelChock/>
+                        <wheelChock/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/710_50R30_5.xml">
+                        <physics yOffset="0.026"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/710_50R30_5.xml">
+                        <physics yOffset="0.026"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/710_50R30_5.xml">
+                        <physics yOffset="0.026"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			
+            <wheelConfiguration name="$l10n_configuration_valueWheelBroad" price="1500" brand="MICHELIN" saveId="MICHELIN_BROAD">
+                <wheels baseConfig="MICHELIN_DEFAULT">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/800_45R30_5.xml">
+                        <wheelChock/>
+                        <wheelChock/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
+                </wheels>
+                <foliageBendingModifier index="1" minX="-1.55" maxX="1.55"/>
+            </wheelConfiguration>
+            
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="TRELLEBORG" saveId="TRELLEBORG_DEFAULT">
                 <wheels>
                     <wheel filename="$data/shared/wheels/tires/trelleborg/T404/710_50R30_5.xml" isLeft="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelFrontLeftAxis" driveNode="wheelFrontLeft" forcePointRatio="0.5" initialCompression="20" suspTravel="0.15" spring="50" damper="50" yOffset="0.028"/>
@@ -84,83 +163,6 @@
                     <wheel filename="$data/shared/wheels/tires/trelleborg/T404/800_45R30_5.xml"/>
                 </wheels>
                 <foliageBendingModifier index="1" minX="-1.55" maxX="1.55"/>
-            </wheelConfiguration>
-            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="MICHELIN" saveId="MICHELIN_DEFAULT">
-                <wheels baseConfig="TRELLEBORG_DEFAULT">
-                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/710_50R30_5.xml">
-                        <physics yOffset="0.026"/>
-                    </wheel>
-                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/710_50R30_5.xml">
-                        <physics yOffset="0.026"/>
-                    </wheel>
-                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/710_50R30_5.xml">
-                        <physics yOffset="0.026"/>
-                        <wheelChock/>
-                        <wheelChock/>
-                    </wheel>
-                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/710_50R30_5.xml">
-                        <physics yOffset="0.026"/>
-                    </wheel>
-                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/710_50R30_5.xml">
-                        <physics yOffset="0.026"/>
-                    </wheel>
-                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/710_50R30_5.xml">
-                        <physics yOffset="0.026"/>
-                    </wheel>
-                </wheels>
-            </wheelConfiguration>
-			
-            <wheelConfiguration name="$l10n_configuration_valueWheelBroad" price="1500" brand="MICHELIN" saveId="MICHELIN_BROAD">
-                <wheels baseConfig="MICHELIN_DEFAULT">
-                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
-                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
-                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/800_45R30_5.xml">
-                        <wheelChock/>
-                        <wheelChock/>
-                    </wheel>
-                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
-                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
-                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
-                </wheels>
-                <foliageBendingModifier index="1" minX="-1.55" maxX="1.55"/>
-            </wheelConfiguration>
-			
-            <wheelConfiguration name="Deafult Special 1" price="1500" brand="MICHELIN" saveId="MICHELIN_SPECIAL1">
-                <wheels baseConfig="MICHELIN_DEFAULT">
-                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
-                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
-                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml">
-                        <wheelChock/>
-                        <wheelChock/>
-                    </wheel>
-                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
-                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
-                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
-                </wheels>
-                <foliageBendingModifier index="1" minX="-1.55" maxX="1.55"/>
-            </wheelConfiguration>
-			
-            <wheelConfiguration name="Deafult Special 2" price="1500" brand="MICHELIN" saveId="MICHELIN_SPECIAL2">
-                <wheels baseConfig="MICHELIN_DEFAULT">
-                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
-                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
-                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml">
-                        <wheelChock/>
-                        <wheelChock/>
-                    </wheel>
-                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
-                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
-                    <wheel filename="wheels/tires/michelin/cargoXBib/800_45R30_5.xml"/>
-                </wheels>
-                <foliageBendingModifier index="1" minX="-1.55" maxX="1.55"/>
-				
-				<objectChange node="wheelRingLF" visibilityActive="true" translationActive="0.08 0 0"	scaleActive="0.7 0.75 0.75"/>
-				<objectChange node="wheelRingRF" visibilityActive="true" translationActive="-0.08 0 0" 	scaleActive="0.7 0.75 0.75"/>
-				<objectChange node="wheelRingLM" visibilityActive="true" translationActive="0.08 0 0"	scaleActive="0.7 0.75 0.75"/>
-				<objectChange node="wheelRingRM" visibilityActive="true" translationActive="-0.08 0 0" 	scaleActive="0.7 0.75 0.75"/>
-				<objectChange node="wheelRingLB" visibilityActive="true" translationActive="0.08 0 0" 	scaleActive="0.7 0.75 0.75"/>
-				<objectChange node="wheelRingRB" visibilityActive="true" translationActive="-0.08 0 0" 	scaleActive="0.7 0.75 0.75"/>
-				
             </wheelConfiguration>
 			
             <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="BKT" saveId="BKT_DEFAULT">
@@ -706,7 +708,7 @@
                 <objectChange node="markerFT_L_02" 			visibilityActive="true" visibilityInactive="false"/>
                 <objectChange node="frontLight_coverOff" 	visibilityActive="true" visibilityInactive="false"/>
 			</coverConfiguration>
-            <coverConfiguration name="$l10n_configuration_valueYes" price="5000" openCoverWhileTipping="true">
+            <coverConfiguration name="$l10n_configuration_valueYes" price="5000" openCoverWhileTipping="true" isDefault="true">
                 <cover openAnimation="toggleCover" fillUnitIndices="1" openOnBuy="true"/>
                 <objectChange node="cover" 					visibilityActive="true" visibilityInactive="false"/>
                 <objectChange node="coverHoses" 			visibilityActive="true" visibilityInactive="false"/>
@@ -811,16 +813,16 @@
 			<objectChange node="additionalLights_side"	visibilityActive="false"	visibilityInactive="true"/>
 			<objectChange node="additionalLights_back"	visibilityActive="false"	visibilityInactive="true"/>
 		</designConfiguration>
-		<designConfiguration name="Yes">
+		<designConfiguration name="Yes" isDefault="true">
 			<objectChange node="additionalLights_side"	visibilityActive="true"	visibilityInactive="false"/>
 			<objectChange node="additionalLights_back"	visibilityActive="true"	visibilityInactive="false"/>
 		</designConfiguration>
 	</designConfigurations>
 	
 	<design2Configurations price="500" title="Farm logo's">
-		<design2Configuration name="Default">
+		<design2Configuration name="No logo's">
 		</design2Configuration>
-		<design2Configuration name="DennisK">
+		<design2Configuration name="DennisK" isDefault="true">
 			<objectChange node="denniskLogo"	visibilityActive="true"	visibilityInactive="false"/>
 		</design2Configuration>
 	</design2Configurations>
