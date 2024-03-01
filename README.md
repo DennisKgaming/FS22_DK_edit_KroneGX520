@@ -70,17 +70,17 @@ Because GitHub has a certain way of packing a release please do the following:
 
 ## Screenshots
 
-![Alt text](screenshots/screenshots_01.png)
+![Alt text](screenshots/screenshot_01.png)
 
-![Alt text](screenshots/screenshots_02.png)
+![Alt text](screenshots/screenshot_02.png)
 
-![Alt text](screenshots/screenshots_03.png)
+![Alt text](screenshots/screenshot_03.png)
 
-![Alt text](screenshots/screenshots_04.png)
+![Alt text](screenshots/screenshot_04.png)
 
-![Alt text](screenshots/screenshots_05.png)
+![Alt text](screenshots/screenshot_05.png)
 
-![Alt text](screenshots/screenshots_06.png)
+![Alt text](screenshots/screenshot_06.png)
 
 
 ## Additional information
