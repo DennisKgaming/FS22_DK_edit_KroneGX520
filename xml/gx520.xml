@@ -347,7 +347,8 @@
                 <light 			node="licensePlateLightHigh"	lightTypes="0"/>
                 <light 			node="frontLight_coverOn"		lightTypes="0"/>
                 <light 			node="frontLight_coverOff"		lightTypes="0"/>
-                <light 			node="frontLights"				lightTypes="0"/>
+                <light 			node="frontLights_01_real"		lightTypes="0"/>
+                <light 			node="frontLights_02_real"		lightTypes="0"/>
                 <light 			node="sidemarkerOrange_realB"	lightTypes="0"/>
                 <light 			node="sidemarkerOrange_realT"	lightTypes="0"/>
                 <light 			node="sidemarkerRed_real"		lightTypes="0"/>
@@ -911,11 +912,8 @@
         <i3dMapping id="countourLightF_R" 				node="0>0|2|0|14|2|1"/>
         <i3dMapping id="markerFT_L" 					node="0>0|2|0|14|2|2"/>
         <i3dMapping id="markerFT_R" 					node="0>0|2|0|14|2|3"/>
-        <i3dMapping id="frontLightT_01" 				node="0>0|2|0|14|2|4"/>
-        <i3dMapping id="frontLightT_02" 				node="0>0|2|0|14|2|5"/>
-        <i3dMapping id="frontLightT_03" 				node="0>0|2|0|14|2|6"/>
-        <i3dMapping id="markerFT_R_02" 					node="0>0|2|0|14|2|7"/>
-        <i3dMapping id="markerFT_L_02" 					node="0>0|2|0|14|2|8"/>
+        <i3dMapping id="markerFT_R_02" 					node="0>0|2|0|14|2|4"/>
+        <i3dMapping id="markerFT_L_02" 					node="0>0|2|0|14|2|5"/>
         <i3dMapping id="workLightLF" 					node="0>0|2|0|14|3|0"/>
         <i3dMapping id="workLightRF" 					node="0>0|2|0|14|3|1"/>
         <i3dMapping id="workLightLB" 					node="0>0|2|0|14|3|2"/>
@@ -923,7 +921,7 @@
         <i3dMapping id="workLights_real" 				node="0>0|2|0|14|4|0"/>
         <i3dMapping id="frontLight_coverOn" 			node="0>0|2|0|14|4|1"/>
         <i3dMapping id="frontLight_coverOff" 			node="0>0|2|0|14|4|2"/>
-        <i3dMapping id="frontLights" 					node="0>0|2|0|14|4|3"/>
+        <i3dMapping id="frontLights_01_real" 			node="0>0|2|0|14|4|3"/>
         <i3dMapping id="sidemarkerOrange_realB" 		node="0>0|2|0|14|4|4"/>
         <i3dMapping id="sidemarkerOrange_realT" 		node="0>0|2|0|14|4|5"/>
         <i3dMapping id="sidemarkerRed_real" 			node="0>0|2|0|14|4|6"/>
@@ -972,6 +970,13 @@
         <i3dMapping id="fillVolumeDeformer01" 			node="0>0|3|2|0"/>
         <i3dMapping id="fillVolumeDeformer02" 			node="0>0|3|2|1"/>
         <i3dMapping id="grid" 							node="0>0|3|2|4"/>
+		
+        <i3dMapping id="additionalLights_front" 		node="0>0|3|2|7"/>
+        <i3dMapping id="frontLightT_01" 				node="0>0|3|2|7|0"/>
+        <i3dMapping id="frontLightT_02" 				node="0>0|3|2|7|1"/>
+        <i3dMapping id="frontLightT_03" 				node="0>0|3|2|7|2"/>
+        <i3dMapping id="frontLights_02_real"			node="0>0|3|2|7|3|0"/>
+		
         <i3dMapping id="drawbar" 						node="0>0|3|3"/>
         <i3dMapping id="attacherJoint" 					node="0>0|3|3|0"/>
         <i3dMapping id="drawbarHydraulicRef" 			node="0>0|3|3|1"/>
